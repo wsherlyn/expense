@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Expense Tracker</h1>
+   
+
+    <div class="block">
+        <h4>Balance</h4>
+        <h3 id="bal">0.00</h3>
+    </div>
+
+    <div class="block">
+        <h4>Total Income</h4>
+        <h3 id="incomeTotal">₹0.00</h3>
+    </div>
+
+    <div class="block">
+        <h4>Total Expense</h4>
+        <h3 id="expenseTotal">₹0.00</h3>
+    </div>
+
+    <br><br>
+
+
+    <div class="transaction">
+
+        <h2>Add Transaction</h2>
+
+        <label><b>Description</b></label><br>
+
+        <input type="text"
+               id="des"
+               placeholder="e.g. Lunch at canteen">
+
+        <br><br>
+
+        <label><b>Amount (₹)</b></label><br>
+
+        <input type="number"
+               id="amt"
+               placeholder="0.00">
+
+        <br><br>
+
+        <label><b>Category</b></label><br>
+
+        <select id="category">
+
+            <option>Food</option>
+            <option>Transport</option>
+            <option>Education</option>
+            <option>Entertainment</option>
+            <option>Health</option>
+            <option>Shopping</option>
+            <option>Salary</option>
+            <option>Other</option>
+
+        </select>
+
+        <br><br>
+
+        <h4><b>Type</b></h4>
+
+        <button  id="income" class="Income" onclick="income()">
+            Income
+        </button>
+
+        <button id="expense" class="expense" onclick="expense()" >
+            Expense
+        </button>
+
+        <br><br>
+
+        <button onclick="showdata()" id="add">
+            Add Transactions
+        </button>
+
+        <p id="result"></p>
+
+    </div>
+
+    <br><br>
+
+   
+
+    <div class="transaction">
+
+        <h2>Transactions</h2>
+        <input type = "text" placeholder="search transaction...">
+        <select>
+            <option>All</option>
+            <option>Food</option>
+            <option>Transaction</option>
+            <option>Education</option>
+            <option>Health</option>
+            <option>Shopping</option>
+            <option>Salary</option>
+            <option>Other</option>
+        </select>
+         
+        <div id="demo"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

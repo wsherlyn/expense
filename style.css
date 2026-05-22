@@ -1,0 +1,66 @@
+body{
+    background-color:rgb(221, 214, 214)
+}
+
+.block{
+display:inline-block;
+background-color:rgb(168, 158, 158);
+border-radius:10px;
+padding:40px;
+border:2px solid black;
+}
+
+.transaction{
+    display:inline-block;
+    background-color:white;
+    border-radius:10px;
+    padding:20px;
+}
+
+button{
+    border-radius:7px;
+    padding:10px;
+    width:150px; 
+    border:1px solid black;
+    cursor: pointer;
+}
+
+.Income{
+    background-color:rgb(8, 184, 46);
+    border:1px solid rgb(44, 190, 63);
+    color:rgb(244, 249, 245);
+}
+
+.expense{
+ color:rgb(114, 108, 108);
+}
+
+#add{
+    background-color:rgb(253, 4, 4);
+    color:white;
+}
+
+#incomeTotal{
+    color:rgb(4, 247, 4);
+}
+
+#expenseTotal{
+    color:red;
+}
+
+h1,h2,h4,label,p{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.Income:active{
+    background-color:rgb(217, 249, 33);
+}
+
+.expense:hover{
+     background-color:rgb(63, 174, 193);
+}
+
+#add:active{
+     background-color:rgb(73, 15, 73);
+    
+}
